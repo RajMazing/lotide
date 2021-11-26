@@ -11,22 +11,22 @@ const assertEqual = function(actual, expected) {
 
 //Hefzul Bari Ratul, helped me with this function
 const findKeyByValue = function(object, value) {
- let output = "";
-  for (let key in object) {
-    if (object[value] === object.key) 
-      output = key;
+  for (let stuff in object) {
+    if (object[stuff] === value)  {
+      return stuff;
       
   }
-  return output;
+}
+  
     
 };
 
 
 
 const bestTVShowsByGenre = {
-  'sci_fi': 'Star Trek: Discovery',
-  'comedy': 'SouthSide',
-  'drama': 'The Wire'
+  sci_fi: 'Star Trek: Discovery',
+  comedy: 'SouthSide',
+  drama: 'The Wire'
 };
 
 
