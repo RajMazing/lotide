@@ -47,30 +47,3 @@ const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Re
 
 assertArraysEqual(takeUntil(["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"], x => x[data2.length -1]), [ 'I\'ve', 'been', 'to', 'Hollywood' ])
 
-//[ 1, 2, 5, 7, 2 ]
-//---
-//[ 'I\'ve', 'been', 'to', 'Hollywood' ]
-
-
-// //kevin's solution
-// //{
-//   const results = [];
-
-//   if (index === undefined) index = 0;
-
-//   (value === undefined) ? value = array[index]: array[index] = value;
-
-//   if(callback===undefined) throw new Error('callback is undefined');
-
-//   if (array === undefined) throw new Error('array is undefined');
-
-//   for (value of array) {
-
-//     if(!callback(value)){
-
-//       results.push(value);
-      
-//     } else break;
-//   }
-//   return results;
-// }
