@@ -1,19 +1,19 @@
+const eqArrays = require('./eqArray')
 
 
 
-
-  const eqArrays = function(arrayOne, arrayTwo) {
-    if (arrayOne.length !== arrayTwo.length) {
-      return false;
-    }
-    for (let i = 0; i < arrayOne.length; i++) {
-      if (arrayOne[i] !== arrayTwo[i]) {
-        return false;
-      }
-    }
-    return true;
+  // const eqArrays = function(arrayOne, arrayTwo) {
+  //   if (arrayOne.length !== arrayTwo.length) {
+  //     return false;
+  //   }
+  //   for (let i = 0; i < arrayOne.length; i++) {
+  //     if (arrayOne[i] !== arrayTwo[i]) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
     
-  };
+  // };
   
   const assertArraysEqual = function(actual, expected) {
     if (eqArrays(actual, expected)) {
@@ -24,4 +24,6 @@
   };
 
 
-  assertArraysEqual([1, 2, 3], [1, 2, 3]);
+  
+
+  module.exports = assertArraysEqual;
