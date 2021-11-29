@@ -39,4 +39,5 @@ const thisIsTheResult = map(words, word => word[0]);
 console.log(thisIsTheResult);
 
 
-assertArraysEqual(map(words, word => word), ["ground", "control", "to", "major", "tom"]); // output ['g', 'c', 't', 'm', 't'] It has passed!
+
+assertArraysEqual(map(words, word => word), ["ground", "control", "to", "major", "tom"]) // output ['g', 'c', 't', 'm', 't'] It has passed! 
