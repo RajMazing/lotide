@@ -28,3 +28,6 @@ console.log(countLetters("   "));
 
 console.log(assertEqual((countLetters("LHL"))["L"], 2));
 console.log(assertEqual((countLetters("LHL"))["H"], 1));
+
+
+module.exports = countLetters;

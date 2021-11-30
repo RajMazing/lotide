@@ -1,3 +1,5 @@
+const { builtinModules } = require("module");
+
 const eqArrays = function(arrayOne, arrayTwo) {
   if (arrayOne.length !== arrayTwo.length) {
     return false;
@@ -47,3 +49,6 @@ const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Re
 
 assertArraysEqual(takeUntil(["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"], x => x[data2.length -1]), [ 'I\'ve', 'been', 'to', 'Hollywood' ])
 
+
+
+module.exports = takeUntil;

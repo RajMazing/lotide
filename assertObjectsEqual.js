@@ -1,3 +1,5 @@
+ 
+
 const eqArrays = (arr1, arr2) => {
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
@@ -56,3 +58,7 @@ const dc = { d: ["2", 3], c: "1" };
       
 const cd2 = { c: "1", d: ["2", 3, 4] };
     console.log(assertObjectsEqual(cd, cd2)); // => false
+
+
+
+  module.exports = assertObjectsEqual;

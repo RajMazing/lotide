@@ -26,3 +26,5 @@ let key = findKey({
 console.log(assertEqual(key, "Akaleri"));
 console.log(assertEqual(key, "noma"));
 
+module.exports = findKey;
+
